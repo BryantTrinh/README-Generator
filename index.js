@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
-const generateReadMe = require('./utils/generateReadMe');
+const generateReadme = require('./utils/generateReadme');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -42,7 +42,7 @@ const questions = [
   {
     type: 'input',
     name: 'test',
-    message: 'What command do you want to run in able to run tests?'
+    message: 'What command do you want to run in able to run tests?',
     default: 'npm test',
   },
   {
@@ -59,14 +59,14 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeFile(fileName, data) {
-  return fs.writeFileSync(path.join(process.cwd(), filename), data);
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((inquirerResponses) => {
     console.log('Generating your README! ...');
-    writeFile('README.md', generateReadMe({ ...inquirerResponses }));
+    writeFile('README.md', generateReadme({ ...inquirerResponses }));
   });
 }
 
