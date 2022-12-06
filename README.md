@@ -4,7 +4,7 @@
 
 ## Description
 
-This README Generator allows you to dynamically create a README.md file using command-line aplication.
+This README Generator allows the user to dynamically create a README.md file by using command-line application.
 
 ## Table of Contents
 
@@ -30,7 +30,10 @@ npm i
 
 ## Usage
 
-Anyone can use this repository.
+Please refer to the provided gif to see usage.
+
+
+![Step by step usage of the README Generator](assets/images/readme-generator.gif)
 
 
 
